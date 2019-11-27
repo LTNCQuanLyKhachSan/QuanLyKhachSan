@@ -13,7 +13,7 @@
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 
-<Pane id="Pane" fx:id="Quan_ly_nhan_vien" layoutY="0.0" prefHeight="700.0" prefWidth="1357.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="quan_ly_khach_san_Controller.Quan_ly_nhan_vien_Controller">
+<Pane id="Pane" fx:id="Quan_ly_nhan_vien" layoutY="0.0" prefHeight="700.0" prefWidth="1357.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="quan_ly_khach_san_Controller.Quan_ly_nhan_vien_Controller">
     <children>
       <Label layoutX="527.0" layoutY="50.0" text="PHẦN MỀM QUẢN LÝ KHÁCH SẠN">
          <font>
@@ -60,7 +60,7 @@
       </Label>
       
       
-      <Button fx:id="taoHoaDon" layoutX="928.0" layoutY="644.0" mnemonicParsing="false" text="Tạo Hóa Đơn" />
+      <Button fx:id="taoHoaDon" layoutX="928.0" layoutY="644.0" mnemonicParsing="false" onAction="#onCreateBill" text="Tạo Hóa Đơn" />
             <ImageView fx:id="anhPhong_ImageView" fitHeight="431.0" fitWidth="761.0" layoutX="54.0" layoutY="201.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../quan_ly_khach_san/image/phong1.jpg" />
