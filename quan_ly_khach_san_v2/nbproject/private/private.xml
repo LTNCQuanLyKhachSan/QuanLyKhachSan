@@ -12,15 +12,10 @@
     </editor-bookmarks>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/E:/luu_tru/nam_4/lap_trinh_nang_cao/java/quan_ly_khach_san_v2/src/quan_ly_khach_san_Controller/Quan_ly_nhan_vien_Controller.java</file>
-            <file>file:/E:/luu_tru/nam_4/lap_trinh_nang_cao/java/quan_ly_khach_san_v2/src/quan_ly_khach_san_view/Dang_nhap.fxml</file>
-            <file>file:/E:/luu_tru/nam_4/lap_trinh_nang_cao/java/quan_ly_khach_san_v2/src/quan_ly_khach_san_view/Quan_ly_nhan_vien_v1.fxml</file>
-            <file>file:/E:/luu_tru/nam_4/lap_trinh_nang_cao/java/quan_ly_khach_san_v2/src/quan_ly_khach_san_view/Quan_ly_khach_san.java</file>
-            <file>file:/E:/luu_tru/nam_4/lap_trinh_nang_cao/java/quan_ly_khach_san_v2/src/quan_ly_khach_san_Controller/Quan_ly_Controller.java</file>
-            <file>file:/E:/luu_tru/nam_4/lap_trinh_nang_cao/java/quan_ly_khach_san_v2/src/quan_ly_khach_san_Controller/Dang_nhap_Controller.java</file>
-            <file>file:/E:/luu_tru/nam_4/lap_trinh_nang_cao/java/quan_ly_khach_san_v2/src/quan_ly_khach_san_view/FXML.fxml</file>
-            <file>file:/E:/luu_tru/nam_4/lap_trinh_nang_cao/java/quan_ly_khach_san_v2/src/quan_ly_khach_san_view/Quan_ly_v1.fxml</file>
-            <file>file:/E:/luu_tru/nam_4/lap_trinh_nang_cao/java/quan_ly_khach_san_v2/src/quan_ly_khach_san_Model/demo.java</file>
+            <file>file:/G:/Documents/Document_Study/AdvanceProgram/Project/QuanLyKhachSan/quan_ly_khach_san_v2/src/quan_ly_khach_san_view/Quan_ly_khach_san.java</file>
+            <file>file:/G:/Documents/Document_Study/AdvanceProgram/Project/QuanLyKhachSan/quan_ly_khach_san_v2/src/quan_ly_khach_san_Controller/Quan_ly_phong_Controller.java</file>
+            <file>file:/G:/Documents/Document_Study/AdvanceProgram/Project/QuanLyKhachSan/quan_ly_khach_san_v2/src/quan_ly_khach_san_Model/Room.java</file>
+            <file>file:/G:/Documents/Document_Study/AdvanceProgram/Project/QuanLyKhachSan/quan_ly_khach_san_v2/src/quan_ly_khach_san_Model/Database.java</file>
         </group>
     </open-files>
 </project-private>
