@@ -48,7 +48,7 @@ public class Quan_ly_khach_san extends Application {
 //        for (int i = 0; i < mList.size(); i++){
 //            System.out.println(mList.get(i).getEquipment());
 //        }
-//        System.out.println("TEST TUAN");
+
     }
 
     /**
