@@ -125,6 +125,17 @@ public class Quan_ly_nhan_vien_Controller implements Initializable{
        
     }
     
+    @FXML
+    private void onCreateBill(ActionEvent event) throws Exception {
+        System.out.println("click");
+        AnchorPane root;
+        root = (AnchorPane)FXMLLoader.load(getClass().getClassLoader().getResource("quan_ly_khach_san_view/Tao_hoa_don.fxml"));
+        Stage st = new Stage();
+        st.setTitle("My New Stage Title");
+        st.setScene(new Scene(root));
+        st.show();
+    }
+    
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         // TODO

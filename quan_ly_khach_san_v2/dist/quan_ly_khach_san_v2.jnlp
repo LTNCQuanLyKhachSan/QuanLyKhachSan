@@ -8,8 +8,13 @@
   </information>
   <resources>
     <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+<<<<<<< HEAD
     <jar href="lib\mysql-connector-java-5.1.6-bin.jar" size="703265" download="eager" />
     <jar href="quan_ly_khach_san_v2.jar" size="648005" download="eager" />
+=======
+    <jar href="lib\core-3.4.0.jar" size="539901" download="eager" />
+    <jar href="quan_ly_khach_san_v2.jar" size="652038" download="eager" />
+>>>>>>> f2c4b11ab62a9cb9f9e15914dded288c33e0e21d
   </resources>
   <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="quan_ly_khach_san_v2" >
     <param name="requiredFXVersion" value="8.0+"/>
