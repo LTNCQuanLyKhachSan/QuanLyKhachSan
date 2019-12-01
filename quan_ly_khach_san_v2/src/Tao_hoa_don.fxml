@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.canvas.Canvas?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="882.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="quan_ly_khach_san_Controller.Tao_hoa_donController">
+   <children>
+      <Button fx:id="view_Btn" layoutX="335.0" layoutY="502.0" mnemonicParsing="false" onAction="#onClickBtnView" prefHeight="39.0" prefWidth="95.0" text="Xem" />
+      <Button fx:id="print_Btn" layoutX="128.0" layoutY="502.0" mnemonicParsing="false" onAction="#onClickBtnPrint" prefHeight="39.0" prefWidth="95.0" text="In" />
+      <Label layoutX="57.0" layoutY="88.0" text="Khách Hàng:" />
+      <Label layoutX="57.0" layoutY="210.0" text="Giờ thuê phòng:" />
+      <Label layoutX="57.0" layoutY="275.0" text="Giờ trả phòng:" />
+      <Label layoutX="56.0" layoutY="145.0" text="Số Phòng:" />
+      <TextField fx:id="name_txt" layoutX="183.0" layoutY="88.0" prefHeight="25.0" prefWidth="309.0" />
+      <TextField fx:id="hBegin_txt" layoutX="183.0" layoutY="210.0" prefHeight="25.0" prefWidth="39.0" />
+      <TextField fx:id="room_txt" layoutX="182.0" layoutY="145.0" prefHeight="25.0" prefWidth="77.0" />
+      <Label layoutX="160.0" layoutY="27.0" text="Hóa Đơn Thuê Phòng">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="229.0" layoutY="214.0" text=":" />
+      <TextField fx:id="mBegin_txt" layoutX="238.0" layoutY="210.0" prefHeight="25.0" prefWidth="39.0" />
+      <Label layoutX="284.0" layoutY="214.0" text="Ngày" />
+      <TextField fx:id="dayBegin_txt" layoutX="318.0" layoutY="210.0" prefHeight="25.0" prefWidth="39.0" />
+      <TextField fx:id="monthBegin_txt" layoutX="382.0" layoutY="210.0" prefHeight="25.0" prefWidth="39.0" />
+      <TextField fx:id="yearBegin_txt" layoutX="449.0" layoutY="210.0" prefHeight="25.0" prefWidth="47.0" />
+      <Label layoutX="367.0" layoutY="214.0" text="/" />
+      <Label layoutX="431.0" layoutY="214.0" text="/" />
+      <TextField fx:id="hEnd_txt" layoutX="185.0" layoutY="271.0" prefHeight="25.0" prefWidth="39.0" />
+      <Label layoutX="231.0" layoutY="275.0" text=":" />
+      <TextField fx:id="mEnd_txt" layoutX="240.0" layoutY="271.0" prefHeight="25.0" prefWidth="39.0" />
+      <Label layoutX="286.0" layoutY="275.0" text="Ngày" />
+      <TextField fx:id="dayEnd_txt" layoutX="320.0" layoutY="271.0" prefHeight="25.0" prefWidth="39.0" />
+      <TextField fx:id="monthEnd_txt" layoutX="384.0" layoutY="271.0" prefHeight="25.0" prefWidth="39.0" />
+      <TextField fx:id="yearEnd_txt" layoutX="451.0" layoutY="271.0" prefHeight="25.0" prefWidth="47.0" />
+      <Label layoutX="369.0" layoutY="275.0" text="/" />
+      <Label layoutX="433.0" layoutY="275.0" text="/" />
+      <CheckBox fx:id="vip_CheckBox" layoutX="312.0" layoutY="145.0" mnemonicParsing="false" text="Vip" />
+      <Canvas fx:id="billCanvas" height="576.0" layoutX="513.0" layoutY="13.0" width="365.0" />
+      <Label layoutX="55.0" layoutY="327.0" text="Phụ phí (dịch vụ):" />
+      <TextField fx:id="phuPhi_txt" layoutX="176.0" layoutY="323.0" />
+      <Label layoutX="330.0" layoutY="327.0" text="nghìn VNĐ" />
+   </children>
+</AnchorPane>
