@@ -112,20 +112,20 @@ public class Tao_hoa_donController implements Initializable {
         int maxX = size + marginLeft;
         try {
             QRCodeWriter qrCodeWriter = new QRCodeWriter();
-            BitMatrix bitmt = qrCodeWriter.encode(s, BarcodeFormat.QR_CODE, size, size);
+//            BitMatrix bitmt = qrCodeWriter.encode(s, BarcodeFormat.QR_CODE, size, size);
 
-            gr.setColor(Color.BLACK);
-            
-            for(int i = minX; i<maxX;i++){
-                for(int j = minY; j < maxY; j++){
-                    if(i == minX || j == minY || i == maxX -1 || j == maxY -1 ){
-                        gr.fillRect(i, j, 1, 1);
-                    }
-                    if(bitmt.get(i-minX, j-minY)){
-                        gr.fillRect(i, j, 1, 1);
-                    }
-                }
-            }
+//            gr.setColor(Color.BLACK);
+//            
+//            for(int i = minX; i<maxX;i++){
+//                for(int j = minY; j < maxY; j++){
+//                    if(i == minX || j == minY || i == maxX -1 || j == maxY -1 ){
+//                        gr.fillRect(i, j, 1, 1);
+//                    }
+//                    if(bitmt.get(i-minX, j-minY)){
+//                        gr.fillRect(i, j, 1, 1);
+//                    }
+//                }
+//            }
 
         } catch (Exception e) {
             System.out.println("get ERROR");

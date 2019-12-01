@@ -11,6 +11,7 @@
 package quan_ly_khach_san_Controller;
 
 
+//import static com.sun.org.apache.xalan.internal.xsltc.compiler.util.Type.Int;
 import java.io.File;
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -21,6 +22,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Button;
 import javafx.scene.control.ChoiceBox;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
@@ -29,7 +31,9 @@ import javafx.scene.image.ImageView;
 import javafx.scene.image.*;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.Pane;
+import javafx.scene.layout.StackPane;
 import javafx.stage.Stage;
+import javafx.stage.StageStyle;
 
 /**
  *
@@ -47,6 +51,12 @@ public class Quan_ly_nhan_vien_Controller implements Initializable{
     private Pane lichLamViec_pane;
     @FXML
     private Stage stage;
+    @FXML
+    private Button trangThietBi_btn;
+    @FXML
+    private Button taoHoaDon_btn;
+    @FXML
+    private Label gioLam_lbl;
     
     @FXML 
     private ImageView anhPhong_ImageView;
@@ -103,6 +113,7 @@ public class Quan_ly_nhan_vien_Controller implements Initializable{
         System.out.println(image.getWidth());
         anhPhong_ImageView.setImage(image);
         anhPhong_ImageView.setVisible(true);*/
+        quan_ly_khach_san_view.Quan_ly_khach_san.setPane(0);
     }
     @FXML
     private void loaiPhong_Click(ActionEvent event) throws Exception {
@@ -124,21 +135,75 @@ public class Quan_ly_nhan_vien_Controller implements Initializable{
        
        
     }
-    
     @FXML
-    private void onCreateBill(ActionEvent event) throws Exception {
+    private void trangThietBi_Click(ActionEvent event) throws Exception {
+       
+//               StackPane secondaryLayout = new StackPane();
+//                AnchorPane a=new AnchorPane();
+//                a.getChildren().add((Pane)FXMLLoader.load(getClass().getResource("Trang_thiet_bi.fxml")));
+//                secondaryLayout.getChildren().add(a);
+//              //  secondaryLayout.getChildren().add(a);
+//                Scene secondScene = new Scene(secondaryLayout,590,400);
+//                
+// 
+//                // Một cửa sổ mới (Stage)
+//                Stage newWindow = new Stage();
+//               
+//              //  newWindow.setTitle("Trang Thiết Bị");
+//                newWindow.setScene(secondScene);
+//                
+//                
+//                
+//                // Sét đặt vị trí cho cửa sổ thứ 2.
+//                // Có vị trí tương đối đối với cửa sổ chính.
+//                newWindow.setX(200);
+//                newWindow.setY(50);
+// 
+//                newWindow.show();
+//                
+                // root = FXMLLoader.load(getClass().getResource("Home_View.fxml"));
+               /* StackPane secondaryLayout = new StackPane();
+                //Scene secondScene = new Scene(secondaryLayout,900,600);
+                secondaryLayout=(StackPane)FXMLLoader.load(getClass().getResource("Dang_nhap.fxml"));
+                Scene secondScene = new Scene(secondaryLayout,900,600);
+ 
+                // Một cửa sổ mới (Stage)
+                Stage newWindow = new Stage();
+                newWindow.setTitle("Trang Thiết Bị");
+                newWindow.setScene(secondScene);
+ 
+                // Sét đặt vị trí cho cửa sổ thứ 2.
+                // Có vị trí tương đối đối với cửa sổ chính.
+                newWindow.setX(200);
+                newWindow.setY(50);
+ 
+                newWindow.show();*/
+        
+       AnchorPane root;
+        root = (AnchorPane)FXMLLoader.load(getClass().getClassLoader().getResource("quan_ly_khach_san_view/Trang_thiet_bi.fxml"));
+        Stage st = new Stage();
+        st.setTitle("Hóa Đơn");
+        st.setScene(new Scene(root));
+        st.show();
+    }
+    @FXML
+    private void taoHoaDon_Click(ActionEvent event) throws Exception {
         System.out.println("click");
         AnchorPane root;
         root = (AnchorPane)FXMLLoader.load(getClass().getClassLoader().getResource("quan_ly_khach_san_view/Tao_hoa_don.fxml"));
         Stage st = new Stage();
-        st.setTitle("My New Stage Title");
+        st.setTitle("Hóa Đơn");
         st.setScene(new Scene(root));
         st.show();
+     
     }
-    
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
+        luongThuong_pane.setVisible(false);
+        thongTinNhanVien_pane.setVisible(false);
+        luongThuong_pane.setVisible(false);
+        trangChu_pane.setVisible(true);
     }    
     
 
