@@ -17,9 +17,6 @@ import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
-import quan_ly_khach_san_Controller.Quan_ly_phong_Controller;
-import quan_ly_khach_san_Model.Room;
-
 
 
 /**
@@ -43,12 +40,6 @@ public class Quan_ly_khach_san extends Application {
         
         stage.setScene(scene);
         stage.show();
-//        quan_ly_khach_san_Controller.Quan_ly_phong_Controller r = new Quan_ly_phong_Controller();
-//        ArrayList<Room> mList =  r.DanhSachPhong();
-//        for (int i = 0; i < mList.size(); i++){
-//            System.out.println(mList.get(i).getEquipment());
-//        }
-
     }
 
     /**

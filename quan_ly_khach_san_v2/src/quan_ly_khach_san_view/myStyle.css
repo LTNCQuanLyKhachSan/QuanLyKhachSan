@@ -1,0 +1,28 @@
+.label{
+    -fx-font-family: Tahoma;
+     -fx-text-fill: #5e2e94;//#1e90ff;
+    
+}
+.Choicebox{
+    -fx-background-color: #e3dce6;//#f0ffff; 
+    -fx-border-color: #5e2e94;//#1e90ff; 
+    -fx-background-radius: 5px; 
+    -fx-border-radius: 5px;
+    -fx-text-fill: #5e2e94;//#1e90ff;
+}
+.TextFeild{
+    -fx-background-color: #e3dce6;//#d3b5f5;// #f0ffff; 
+    -fx-border-color: #5e2e94;//#1e90ff; 
+    -fx-background-radius: 5px; 
+    -fx-border-radius: 5px;
+    -fx-text-fill: #5e2e94//#1e90ff;
+}
+.button{
+    -fx-text-fill: white;
+    -fx-background-color: #5e2e94;//#1e90ff;
+    -fx-font-family: tahoma;
+    -fx-font-weight:bold;
+    -fx-background-radius: 0;
+    
+    
+}

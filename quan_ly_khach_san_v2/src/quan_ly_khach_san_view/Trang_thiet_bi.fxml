@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="419.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="quan_ly_khach_san_Controller.Trang_thiet_bi_Controller">
+   <children>
+      <Label fx:id="ten_lbl" layoutX="14.0" layoutY="14.0" style="-fx-font-size: 20px;" stylesheets="@../quan_ly_khach_san_view/myStyle.css" text="Trang Thiết Bị" />
+      <TableView layoutX="14.0" layoutY="56.0" prefHeight="349.0" prefWidth="573.0" style="-fx-background-color: #d3b5f5; -fx-border-color: #5e2e94; -fx: blue; -fx-border-radius: 7px;" stylesheets="@../quan_ly_khach_san_view/myStyle.css">
+        <columns>
+          <TableColumn prefWidth="126.0" text="STT" />
+            <TableColumn prefWidth="185.0" text="Tình Trạng" />
+          <TableColumn prefWidth="261.0" text="Trang Thiết Bị" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

@@ -12,7 +12,7 @@
 
 <Pane id="Pane" fx:id="dangNhap_frame" prefHeight="690.0" prefWidth="1357.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="quan_ly_khach_san_Controller.Dang_nhap_Controller">
    <children>
-      <Label layoutX="608.0" layoutY="84.0" prefHeight="45.0" prefWidth="212.0" text="ĐĂNG NHẬP">
+      <Label layoutX="608.0" layoutY="84.0" prefHeight="45.0" prefWidth="212.0" stylesheets="@myStyle.css" text="ĐĂNG NHẬP">
          <font>
             <Font name="System Bold" size="30.0" />
          </font>
@@ -22,31 +22,32 @@
             <Image url="@../quan_ly_khach_san/image/LOGO_KHACH_SAN.png" />
          </image>
       </ImageView>
-      <TextField fx:id="tenDangNhap_txt" layoutX="654.0" layoutY="330.0" prefHeight="37.0" prefWidth="274.0">
+      <TextField fx:id="tenDangNhap_txt" layoutX="654.0" layoutY="330.0" prefHeight="37.0" prefWidth="274.0" styleClass="TextFeild" stylesheets="@myStyle.css">
          <font>
             <Font size="20.0" />
          </font></TextField>
-      <TextField fx:id="matKhau_txt" layoutX="654.0" layoutY="419.0" prefHeight="44.0" prefWidth="274.0">
+      <TextField fx:id="matKhau_txt" layoutX="654.0" layoutY="419.0" prefHeight="44.0" prefWidth="274.0" styleClass="TextFeild" stylesheets="@myStyle.css">
          <font>
             <Font size="20.0" />
          </font></TextField>
-      <Label layoutX="478.0" layoutY="337.0" text="Tên Đăng Nhập">
+      <Label layoutX="478.0" layoutY="337.0" stylesheets="@myStyle.css" text="Tên Đăng Nhập">
          <font>
             <Font size="20.0" />
          </font></Label>
-      <Label layoutX="478.0" layoutY="426.0" text="Mật Khẩu">
+      <Label layoutX="478.0" layoutY="426.0" stylesheets="@myStyle.css" text="Mật Khẩu">
          <font>
             <Font size="20.0" />
          </font></Label>
-      <Button fx:id="thoat" layoutX="502.0" layoutY="575.0" mnemonicParsing="false" onAction="#thoat_Click" prefHeight="45.0" prefWidth="167.0" text="Thoát">
+      <Button fx:id="thoat" layoutX="502.0" layoutY="575.0" mnemonicParsing="false" onAction="#thoat_Click" prefHeight="45.0" prefWidth="167.0" style="-fx-background-radius: 10px;" stylesheets="@myStyle.css" text="Thoát">
          <font>
             <Font size="20.0" />
          </font></Button>
-      <Button fx:id="dangNhap" layoutX="754.0" layoutY="575.0" mnemonicParsing="false" onAction="#dangNhap_Click" prefHeight="45.0" prefWidth="167.0" text="Đăng nhập">
+      <Button fx:id="dangNhap" layoutX="754.0" layoutY="575.0" mnemonicParsing="false" onAction="#dangNhap_Click" prefHeight="45.0" prefWidth="167.0" style="-fx-background-radius: 10px;" stylesheets="@myStyle.css" text="Đăng nhập">
          <font>
             <Font size="20.0" />
          </font></Button>
-      <Line endX="339.0" layoutX="637.0" layoutY="151.0" startX="-203.0" />
+      <Line endX="420.0" layoutX="637.0" layoutY="151.0" startX="-324.0" stroke="#5e2e94" />
+      <Label fx:id="error" layoutX="478.0" layoutY="500.0" style="-fx-text-fill: red;" stylesheets="@myStyle.css" />
    </children>
    <opaqueInsets>
       <Insets />
