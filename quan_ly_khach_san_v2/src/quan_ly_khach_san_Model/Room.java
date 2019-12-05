@@ -13,9 +13,19 @@ public class Room {
     private String id;
     private int type;
     private int price;
-    private String equipment;
     private int status;
-    private int maxPeople;
+    private int idHotel;
+
+    public Room(String id, int type, int price, int status, int idHotel) {
+        this.id = id;
+        this.type = type;
+        this.price = price;
+        this.status = status;
+        this.idHotel = idHotel;
+    }
+
+    public Room() {
+    }
 
     public String getId() {
         return id;
@@ -41,14 +51,6 @@ public class Room {
         this.price = price;
     }
 
-    public String getEquipment() {
-        return equipment;
-    }
-
-    public void setEquipment(String equipment) {
-        this.equipment = equipment;
-    }
-
     public int getStatus() {
         return status;
     }
@@ -57,25 +59,12 @@ public class Room {
         this.status = status;
     }
 
-    public int getMaxPeople() {
-        return maxPeople;
+    public int getIdHotel() {
+        return idHotel;
     }
 
-    public void setMaxPeople(int maxPeople) {
-        this.maxPeople = maxPeople;
+    public void setIdHotel(int idHotel) {
+        this.idHotel = idHotel;
     }
 
-    public Room(String id, int type, int price, String equipment, int status, int maxPeople) {
-        this.id = id;
-        this.type = type;
-        this.price = price;
-        this.equipment = equipment;
-        this.status = status;
-        this.maxPeople = maxPeople;
-    }
-
-    public Room() {
-    }
-    
-    
 }

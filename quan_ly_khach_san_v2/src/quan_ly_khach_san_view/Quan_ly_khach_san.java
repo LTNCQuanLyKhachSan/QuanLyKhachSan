@@ -43,11 +43,16 @@ public class Quan_ly_khach_san extends Application {
         
         stage.setScene(scene);
         stage.show();
-//        quan_ly_khach_san_Controller.Quan_ly_phong_Controller r = new Quan_ly_phong_Controller();
-//        ArrayList<Room> mList =  r.DanhSachPhong();
+         quan_ly_khach_san_Controller.Quan_ly_phong_Controller r = new Quan_ly_phong_Controller();
+//        ArrayList<Room> mList =  r.DanhSachPhongTrong();
 //        for (int i = 0; i < mList.size(); i++){
-//            System.out.println(mList.get(i).getEquipment());
+//            System.out.println(mList.get(i).getStatus());
 //        }
+        r.DatPhong("101","tuan", 2,  "2019-12-31 22:38:00");
+//        r.TraPhong("106","2019-12-05 08:40:41");
+
+//        System.out.println("ID Hotel " + r.getIdHotel("101"));
+        System.out.println("TEST TUAN");
 
     }
 
