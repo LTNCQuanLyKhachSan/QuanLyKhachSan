@@ -24,49 +24,29 @@
     <body>
         <div>
        <table border="0" width="100%"  >
-        <tr>
+        <tr align="left">
             <th width="5%">&nbsp;</th>
-            <th width="70%" align="center" ><img id="anhPhong" height="77%" width=90% src="image/phong1.jpg"/></th>
+            <th width="70%" align="center" ><img id="anhPhong" width="90%" height="77%" src="image/phong1.jpg"/></th>
             <th width="20%" align="top">
-                <table border="0" width="100%" align="top" align="left">
+                <table border="0" width="100%" align="top" >
                     <tr>
                         <th style="font-size: 15px; color: #660033" colspan="2" width="100%" align="left">Tham Khảo Phòng</th>
                     </tr>
                      
                     <tr>
-                        <th width="35%" style="font-size: 13px" align="left">Tầng</th>
+                        <th width="35%" style="font-size: 13px" align="left">Loại Phòng</th>
                         <th width="65%" align="left">
                             <select id="tang" style="font-size: 13px" >
-                                <option value="1">Tầng 01 </option>
-                                <option value="2">Tầng 02</option>
-                                <option value="3">Tầng 03</option>
-                                <option value="4">Tầng 04</option>
-                                <option value="5">Tầng 05</option>
-                                <option value="6">Tầng 06</option>
-                                <option value="7">Tầng 07</option>
-                                <option value="8">Tầng 08</option>
-                                <option value="9">Tầng 09</option>
-                                <option value="10">Tầng 10 &nbsp;</option>
+                                <option value="1">Phòng 1 giường đơn </option>
+                                <option value="2">Phòng 2 giường đơn</option>
+                                <option value="3">Phòng 1 giường đôi</option>
+                                <option value="4">phòng 2 giường đôi</option>
+                                <option value="5">phòng gia đình</option>
+                                
                             </select>
                         </th>
                     </tr>
-                    <tr>
-                       <th width="35%" style="font-size: 13px" align="left">Phòng</th>
-                        <th width="65%" id="phong" align="left">
-                            <select style="font-size: 13px" >
-                                <option value="1">Phòng 01</option>
-                                <option value="2">Phòng 02</option>
-                                <option value="3">Phòng 03</option>
-                                <option value="4">Phòng 04</option>
-                                <option value="5">Phòng 05</option>
-                                <option value="6">Phòng 06</option>
-                                <option value="7">Phòng 07</option>
-                                <option value="8">Phòng 08</option>
-                                <option value="9">Phòng 09</option>
-                                <option value="10">Phòng 10</option>
-                            </select>
-                        </th>
-                    </tr>
+                   
                      <tr align="left">
                         <th  width="35%"   style="font-size: 13px">Trạng thái</th>
                         <th width="65%"><output name="trangThai" >&nbsp;</output></th>
@@ -110,13 +90,17 @@
                         <th width="35%" style="font-size: 13px" >Loại Phòng</th>
                         <th width="65%" id="loaiPhong">
                             <select style="font-size: 13px">
-                                <option value="phongDoi">Phòng Đôi</option>
-                                <option value="phongDon">Phòng Đơn</option>
+                                <option value="1">Phòng 1 giường đơn </option>
+                                <option value="2">Phòng 2 giường đơn</option>
+                                <option value="3">Phòng 1 giường đôi</option>
+                                <option value="4">phòng 2 giường đôi</option>
+                                <option value="5">phòng gia đình</option>
                                 
                             </select>
                         </th>
                           
                     </tr>
+                    
                     
                     <tr align="left">
                         <th width="35%" id="hinhThucThanhToan" style="font-size: 13px">Hình Thức Thanh Toán</th>
