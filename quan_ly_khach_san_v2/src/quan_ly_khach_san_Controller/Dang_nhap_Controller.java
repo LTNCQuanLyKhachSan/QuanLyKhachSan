@@ -18,6 +18,7 @@ import javafx.fxml.Initializable;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Label;
+import javafx.scene.control.TextField;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.StackPane;
 import javafx.stage.Stage;
@@ -31,9 +32,15 @@ public class Dang_nhap_Controller implements Initializable{
     
     @FXML
     private Label label;
+    @FXML
     private Stage stage;
+    @FXML
+    private Label error;
+    @FXML
+    private TextField tenDangNhap_txt;
+    @FXML
+    private TextField matKhau_txt;
     
-   
     
     
     
@@ -62,9 +69,26 @@ public class Dang_nhap_Controller implements Initializable{
         Stage stage=new Stage();*/
         //stage.show();
        // stage = (Stage) (a.Quan_ly_nhan_vien).getScene().getWindow();
-        Quan_ly_khach_san.setPane(1);
-
+        String tenDangNhap=tenDangNhap_txt.getText();
+        
+        String matKhau=matKhau_txt.getText();
+        if(("admin".equals(tenDangNhap_txt.getText()))&&("admin".equals(matKhau_txt.getText())))
+        {
+            Quan_ly_khach_san.setPane(2);
+        }
+        else if (("1".equals(tenDangNhap_txt.getText()))&&("1".equals(matKhau_txt.getText())))
+        {
+            Quan_ly_khach_san.setPane(1);
+            
+        }
+        else 
+        {
+            error.setText("Tài khoản bạn vừa nhập không đúng");
+        }
+                System.out.println("admin".equals(tenDangNhap_txt.getText()));
+                 System.out.println("admin".toString());
     }
+    
     @FXML
     private void thoat_Click(ActionEvent event) {
         Platform.exit();
